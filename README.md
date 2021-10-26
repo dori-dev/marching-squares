@@ -34,6 +34,29 @@ python noise_marching_rectangles.py
 python simple_marching_rectangles.py
 ```
 
+## You can change these variables to get a different result
+```
+WIDTH -> screen width
+```
+
+```
+HEIGHT -> screen height
+```
+
+```
+COUNT -> count of points
+```
+
+```
+NOISE_INC -> noise increment(just in noise_marching_rectangles.py)
+```
+
+```
+SPEED -> speed of world change! The higher the number, the lower the speed
+```
+
+
+
 ## Links
 
 Download source code: [Click here](https://github.com/dori-dev/marching-rectangles/archive/refs/heads/main.zip)
