@@ -5,14 +5,16 @@ from random import randint
 from EasyDraw import EasyDraw
 from EasyDraw.Vector import Vector
 
-WIDTH = 600
-HEIGHT = 600
-COUNT = 20
+# You can change these variables to get a different result
+WIDTH = 1000  # screen width
+HEIGHT = 1000  # screen height
+COUNT = 40  # count of point
+
+# Constant Variables
+binary = [0, 1]
 DIST = WIDTH//(COUNT - 1)
 HALF_DIST = DIST / 2
 
-
-binary = [0, 1]
 
 
 def binary_to_decimal(num_4: binary, num_3: binary, num_2: binary, num_1: binary) -> int:
