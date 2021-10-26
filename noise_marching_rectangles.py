@@ -1,18 +1,23 @@
 """Marching Rectangles Algorithm in Python
+and use opensimplex algorithm
 """
 
-from random import randint
+from math import ceil
 from EasyDraw import EasyDraw
 from EasyDraw.Vector import Vector
+from opensimplex import OpenSimplex
 
-WIDTH = 600
-HEIGHT = 600
-COUNT = 20
+WIDTH = 1000
+HEIGHT = 1000
+COUNT = 40
 DIST = WIDTH//(COUNT - 1)
 HALF_DIST = DIST / 2
-
-
+NOISE_INC = 0.5
+SPEED = 100
 binary = [0, 1]
+
+
+open_simplex = OpenSimplex(seed=1)
 
 
 def binary_to_decimal(num_4: binary, num_3: binary, num_2: binary, num_1: binary) -> int:
@@ -37,10 +42,10 @@ def binary_to_decimal(num_4: binary, num_3: binary, num_2: binary, num_1: binary
 def case_of_points(app, i, j):
     """calculate case value with i and j points(4 points) and convert binary to decimal
     """
-    case = binary_to_decimal(app.points[i][j],
-                             app.points[i+1][j],
-                             app.points[i+1][j+1],
-                             app.points[i][j+1])
+    case = binary_to_decimal(ceil(app.points[i][j]),
+                             ceil(app.points[i+1][j]),
+                             ceil(app.points[i+1][j+1]),
+                             ceil(app.points[i][j+1]))
     return case
 
 
@@ -86,14 +91,25 @@ def generate_case(x_pos, y_pos):
 def setup(app):
     """setup function
     """
-    app.points = []
-    for _ in range(0, COUNT):
-        app.points.append([randint(0, 1) for _ in range(0, COUNT)])
+    app.z_off = 0
 
 
 def draw(app):
     """draw function
     """
+    x_off = 0
+    app.points = []
+    for _ in range(0, COUNT):
+        x_off += NOISE_INC
+        y_off = 0
+        row_list = []
+        for _ in range(0, COUNT):
+            row_list.append(open_simplex.noise3d(
+                x=x_off, y=y_off, z=app.z_off))
+            y_off += NOISE_INC
+        app.points.append(row_list)
+    app.z_off += (NOISE_INC/SPEED)
+
     app.canvas.stroke_width(2)
     app.canvas.stroke('white')
 
