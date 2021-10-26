@@ -31,7 +31,7 @@ pip install opensimplex
 python noise_marching_rectangles.py
 ```
 ```
-python noise_marching_rectangles.py
+python simple_marching_rectangles.py
 ```
 
 ## Links
