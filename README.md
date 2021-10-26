@@ -17,11 +17,12 @@ marching rectangles algorithm in python with clean code.
 ## Installation Requirements
 
 ```
-pip install opensimplex
-```
-```
 pip install EasyDraw
 ```
+```
+pip install opensimplex
+```
+
 
 
 ## How to run
