@@ -8,7 +8,7 @@ from EasyDraw.Vector import Vector
 # You can change these variables to get a different result
 WIDTH = 1000  # screen width
 HEIGHT = 1000  # screen height
-COUNT = 40  # count of point
+COUNT = 40  # count of points
 
 # Constant Variables
 binary = [0, 1]
