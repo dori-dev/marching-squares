@@ -7,15 +7,17 @@ from EasyDraw import EasyDraw
 from EasyDraw.Vector import Vector
 from opensimplex import OpenSimplex
 
-WIDTH = 1000
-HEIGHT = 1000
-COUNT = 40
+# You can change these variables to get a different result
+WIDTH = 1000  # screen width
+HEIGHT = 1000  # screen height
+COUNT = 40  # count of point
+NOISE_INC = 0.5  # noise increment
+SPEED = 100  # speed of world change! The higher the number, the lower the speed
+
+# Constant Variables
+binary = [0, 1]
 DIST = WIDTH//(COUNT - 1)
 HALF_DIST = DIST / 2
-NOISE_INC = 0.5
-SPEED = 100
-binary = [0, 1]
-
 
 open_simplex = OpenSimplex(seed=1)
 
