@@ -10,7 +10,7 @@ from opensimplex import OpenSimplex
 # You can change these variables to get a different result
 WIDTH = 1000  # screen width
 HEIGHT = 1000  # screen height
-COUNT = 40  # count of point
+COUNT = 40  # count of points
 NOISE_INC = 0.5  # noise increment
 SPEED = 100  # speed of world change! The higher the number, the lower the speed
 
