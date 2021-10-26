@@ -5,7 +5,7 @@ marching rectangles algorithm in python with clean code.
 
 - Python 3
 - EasyDraw
-- opensimplex
+
 
 ## Creators
 - Mohammad Dori
@@ -28,7 +28,10 @@ pip install opensimplex
 ## How to run
 
 ```
-python marching_rectangles_opensimplex.py
+python noise_marching_rectangles.py
+```
+```
+python noise_marching_rectangles.py
 ```
 
 ## Links
