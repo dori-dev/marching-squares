@@ -1,4 +1,4 @@
-"""Marching Rectangles Algorithm in Python
+"""Marching Squares Algorithm in Python
 """
 
 from random import randint
@@ -118,7 +118,7 @@ def draw(app):
 EasyDraw(width=WIDTH,
          height=HEIGHT,
          fps=30,
-         title='Marching Rectangles',
+         title='Marching Squares',
          background='black',
          autoClear=True,
          setupFunc=setup,
