@@ -42,9 +42,9 @@ python simple_marching_squares.py
 
 - COUNT: count of points
 
-- NOISE_INC: noise increment(just in noise_marching_rectangles.py)
+- NOISE_INC: noise increment(just in noise_marching_squares.py)
 
-- SPEED: speed of world change(just in noise_marching_rectangles.py)
+- SPEED: speed of world change(just in noise_marching_squares.py)
 
 
 ## Links
