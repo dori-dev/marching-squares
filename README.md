@@ -1,5 +1,5 @@
-# Marching Rectangles
-marching rectangles algorithm in python with clean code.
+# Marching Squares
+marching Squares algorithm in python with clean code.
 
 ## Tools
 
@@ -28,10 +28,10 @@ pip install opensimplex
 ## How to run
 
 ```
-python noise_marching_rectangles.py
+python noise_marching_squares.py
 ```
 ```
-python simple_marching_rectangles.py
+python simple_marching_squares.py
 ```
 
 ## You can change these variables to get a different result
@@ -49,6 +49,6 @@ python simple_marching_rectangles.py
 
 ## Links
 
-Download source code: [Click here](https://github.com/dori-dev/marching-rectangles/archive/refs/heads/main.zip)
+Download source code: [Click here](https://github.com/dori-dev/marching-squares/archive/refs/heads/main.zip)
 
 My github acount: [Click here](https://github.com/dori-dev/)
