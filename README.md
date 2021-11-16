@@ -48,6 +48,6 @@ python simple_marching_squares.py
 #
 ## Links
 
-Download source code: [Click Here](https://github.com/dori-dev/marching-squares/archive/refs/heads/main.zip)
+Download Source Code: [Click Here](https://github.com/dori-dev/marching-squares/archive/refs/heads/main.zip)
 
 My github acount: [Click Here](https://github.com/dori-dev/)
