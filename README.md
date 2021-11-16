@@ -1,5 +1,5 @@
 # Marching Squares
-marching Squares algorithm in python with clean code.
+Marching Squares algorithm in python with clean code.
 
 
 #
